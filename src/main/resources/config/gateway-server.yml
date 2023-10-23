@@ -32,4 +32,10 @@ management:
     web:
       exposure:
         include: "*"
-
+    enable-by-default: true
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1
